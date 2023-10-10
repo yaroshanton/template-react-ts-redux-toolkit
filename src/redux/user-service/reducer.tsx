@@ -1,5 +1,5 @@
 // import { UPDATE_USER } from '../actions-types';
-import { IUserReducer } from 'redux/test-service/interfaces';
+import { IUserReducer } from 'redux/user-service/interfaces';
 
 const initState: IUserReducer = {
 	user: null,
