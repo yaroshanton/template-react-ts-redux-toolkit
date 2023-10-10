@@ -7,7 +7,7 @@ import store from './store';
 import './index.css';
 
 const element = document.getElementById('root');
-const root = createRoot(element!);
+const root = createRoot(element as HTMLElement);
 
 root.render(
 	<React.StrictMode>
