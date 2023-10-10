@@ -3,7 +3,8 @@
         "browserslist",
         "linebreak",
         "nospace",
-        "onespace"
+        "onespace",
+        "swiper"
     ],
     "editor.formatOnSave": false,
     "[javascript]": {

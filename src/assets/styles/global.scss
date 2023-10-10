@@ -1,13 +1,13 @@
 //fonts
-@import './../fonts/fonts.css';
+@import 'assets/fonts/fonts.css';
 
 //styles
-@import './functions';
-@import './mixins';
-@import './resets';
-@import './css-variables';
-@import './variables';
-@import './media.scss';
+@import 'assets/styles/functions';
+@import 'assets/styles/mixins';
+@import 'assets/styles/resets';
+@import 'assets/styles/variables';
+@import 'assets/styles/css-variables';
+@import 'assets/styles/media';
 
 //swiper
 @import 'swiper/scss';

@@ -1,8 +1,67 @@
-:root    {
-  //header
-  // --border-button-disabled: #d9d9d9;
-  // --background-button-disabled: #f5f5f5;
-  // --text-button-disabled: #00000040;
-  // --text-submit-button: #{$defaultWhite};
-  // --text-hint: #{$defaultWhite};
+:root {
+	--neutral-900: #{$primaryBlack};
+	--neutral-800: #182338;
+	--neutral-700: #273149;
+	--neutral-600: #36425c;
+	--neutral-500: #{defaultGrey};
+	--neutral-400: #{$primaryGrey};
+	--neutral-300: #8f98a9;
+	--neutral-200: #{$lightGrey};
+	--neutral-100: #f0f1f4;
+	--neutral-50: #fbfbfb;
+
+	--primary-900: #002736;
+	--primary-800: #004a67;
+	--primary-700: #026c96;
+	--primary-600: #128ebf;
+	--primary-500: #{$primaryBlue};
+	--primary-400: #52c9f8;
+	--primary-300: #7fdafe;
+	--primary-200: #b6eafe;
+	--primary-100: #{$lightBlue};
+	--primary-50: #f8fdff;
+
+	--success-900: #013310;
+	--success-800: #03651e;
+	--success-700: #008e31;
+	--success-600: #00ba41;
+	--success-500: #{$primaryGreen};
+	--success-400: #00de7f;
+	--success-300: #5ceca1;
+	--success-200: #a6f6ca;
+	--success-100: #dbf9e8;
+	--success-50: #f6fdf9;
+
+	--warning-900: #351e00;
+	--warning-800: #693c02;
+	--warning-700: #975700;
+	--warning-600: #c27501;
+	--warning-500: #f19702;
+	--warning-400: #f5aa3d;
+	--warning-300: #fdc372;
+	--warning-200: #feddaf;
+	--warning-100: #fceddb;
+	--warning-50: #fefaf6;
+
+	--error-900: #390001;
+	--error-800: #6f0001;
+	--error-700: #9b0000;
+	--error-600: #ca0008;
+	--error-500: #{$primaryRed};
+	--error-400: #fe4a52;
+	--error-300: #ff7379;
+	--error-200: #feb4b6;
+	--error-100: #fee6e8;
+	--error-50: #fef8f9;
+
+	--info-900: #011034;
+	--info-800: #011034;
+	--info-700: #013293;
+	--info-600: #0144bf;
+	--info-500: #1a5eec;
+	--info-400: #4b81f7;
+	--info-300: #7ca2fd;
+	--info-200: #b3cbff;
+	--info-100: #e7eeff;
+	--info-50: #f9faff;
 }
