@@ -3,11 +3,11 @@ import React from 'react';
 import './assets/styles/global.scss';
 
 function App() {
-	return (
-		<>
-			<h1>Hello new project!</h1>
-		</>
-	);
+  return (
+    <>
+      <p className="qwrq1">Hello new project!</p>
+    </>
+  );
 }
 
 export default App;

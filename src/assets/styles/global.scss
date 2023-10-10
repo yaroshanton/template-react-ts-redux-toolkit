@@ -1,11 +1,12 @@
 //fonts
-@import './../fonts//fonts.css';
+@import './../fonts/fonts.css';
 
 //styles
-@import './_functions.scss';
-@import './_mixins.scss';
-@import './_variables.scss';
-@import './css-variables.scss';
+@import './functions';
+@import './mixins';
+@import './resets';
+@import './css-variables';
+@import './variables';
 @import './media.scss';
 
 //swiper
@@ -14,9 +15,6 @@
 @import 'swiper/scss/pagination';
 @import 'swiper/css/scrollbar';
 
-// :root {
-	// --box-shadow-1: 0px 4px 12px rgba(51, 75, 78, 0.08);
-// }
 
 
 a {
@@ -25,4 +23,7 @@ a {
 
 body {
 	background: #fff;
+	font-family: "Lato";
+	  font-weight: normal;
+		  font-size: 14px;
 }
