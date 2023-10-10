@@ -3,9 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"@babel/plugin-transform-private-property-in-object": "^7.22.11",
 		"@mui/material": "^5.13.7",
-		"@reduxjs/toolkit": "^1.9.5",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^14.0.0",
 		"@testing-library/user-event": "^14.4.3",
@@ -13,6 +11,7 @@
 		"@types/node": "^20.3.3",
 		"@types/react": "^18.2.14",
 		"@types/react-dom": "^18.2.6",
+		"@reduxjs/toolkit": "^1.9.5",
 		"axios": "^1.5.1",
 		"classnames": "^2.3.2",
 		"dayjs": "^1.11.9",
@@ -31,7 +30,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose",
+		"lint": "tslint -c tslint.json src/**/*.{ts,tsx,scss,css} --fix --format verbose",
 		"tslint-check": "tslint-config-prettier-check ./tslint.json"
 	},
 	"eslintConfig": {
@@ -53,12 +52,15 @@
 		]
 	},
 	"devDependencies": {
+		"@babel/plugin-transform-private-property-in-object": "^7.22.11",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-import-resolver-typescript": "^3.5.5",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"@typescript-eslint/eslint-plugin": "^6.7.5",
+		"@typescript-eslint/parser": "^6.7.5",
 		"lint-staged": "^13.2.3",
 		"prettier": "^2.8.8",
 		"sass": "^1.69.1",
