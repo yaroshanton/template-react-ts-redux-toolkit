@@ -118,7 +118,6 @@
 		"no-duplicate-imports": "error",
 		// "jsx-quotes": ["error", "prefer-single"],
 		"eol-last": ["error", "always"],
-		"object-curly-spacing": ["error", "always"],
 		"no-inline-comments": "error",
 		"@typescript-eslint/type-annotation-spacing": "error",
 		"arrow-body-style": "off",
@@ -128,32 +127,6 @@
 		"@typescript-eslint/no-explicit-any": "off",
 		"no-unsafe-optional-chaining": ["error"],
 		"react/no-array-index-key": "off",
-		"no-use-before-define": "off",
-		"simple-import-sort/imports": [
-			"error",
-			{
-				"groups": [
-					// Packages. `react` related packages come first.
-					[
-						"^react",
-						"^@?\\w",
-						// Internal packages.
-						"^(components|modules|utils)(/.*|$)",
-						// Side effect imports.
-						"^\\u0000",
-						// Parent imports. Put `..` last.
-						"^\\.\\.(?!/?$)",
-						"^\\.\\./?$",
-						// Other relative imports. Put same-folder imports and `.` last.
-						"^\\./(?=.*/)(?!/?$)",
-						"^\\.(?!/?$)",
-						"^\\./?$",
-						// Style imports.
-						"^.+\\.s?css$"
-					]
-				]
-			}
-		],
-		"simple-import-sort/exports": "error"
+		"no-use-before-define": "off"
 	}
 }

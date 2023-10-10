@@ -1,12 +1,12 @@
 // import { UPDATE_USER } from '../actions-types';
-import { IUserReducer } from 'store/user-service/interfaces';
+import {IUserReducer} from 'store/user-service/interfaces';
 
 const initState: IUserReducer = {
 	user: null,
 };
 
 const userReducer = (state = initState, action: any) => {
-	const { type, payload } = action;
+	const {type, payload} = action;
 
 	switch (type) {
 		// case UPDATE_USER:
