@@ -1,0 +1,1 @@
+// export const APARTMENT_ACCOUNT_ID_CHARS_LENGTH = 10;

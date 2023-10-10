@@ -1,0 +1,23 @@
+@mixin d-flex($direction: row, $justifyContent: null, $alignItems: null, $gap: 0px) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+	@if ($gap) {
+		gap: $gap;
+	}
+}
+
+@mixin typography(
+	$color: inherit,
+	$fontSize: inherit,
+	$fontWeight: inherit,
+	$lineHeight: normal,
+	$letterSpacing: 0.15px
+) {
+	color: $color;
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	line-height: $lineHeight;
+	letter-spacing: $letterSpacing;
+}
