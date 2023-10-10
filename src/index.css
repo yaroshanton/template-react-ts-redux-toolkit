@@ -31,12 +31,20 @@ body {
 	min-height: 100dvh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+	font-family: 'Lato';
+	font-weight: normal;
+	font-size: 14px;
 }
 
 ul[class],
 ol[class] {
 	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
 }
 
 a:not([class]) {
@@ -66,10 +74,4 @@ select {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
-}
-
-a {
-	display: block;
-	text-decoration: none;
-	color: inherit;
 }
