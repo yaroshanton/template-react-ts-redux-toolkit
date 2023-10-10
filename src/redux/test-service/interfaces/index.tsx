@@ -1,5 +1,6 @@
-import { User } from 'shared/types/user';
+// import { User } from 'shared/types/user';
 
 export interface IUserReducer {
-	user: User | null;
+	// user: User | null;
+	user: null;
 }
