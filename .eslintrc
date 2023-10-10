@@ -33,7 +33,7 @@
 		"import/resolver": {
 			"node": {
 				"extensions": [".js", ".jsx", ".ts", ".tsx", ".svg"],
-				"paths": ["apps/portal"]
+				"paths": ["src/"]
 			},
 			"typescript": {}
 		}

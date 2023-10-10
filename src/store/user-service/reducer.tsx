@@ -2,18 +2,18 @@
 import { IUserReducer } from 'store/user-service/interfaces';
 
 const initState: IUserReducer = {
-  user: null,
+	user: null,
 };
 
 const userReducer = (state = initState, action: any) => {
-  const { type, payload } = action;
+	const { type, payload } = action;
 
-  switch (type) {
-    // case UPDATE_USER:
-    // return { ...state, user: payload };
-    default:
-      return state;
-  }
+	switch (type) {
+		// case UPDATE_USER:
+		// return { ...state, user: payload };
+		default:
+			return state;
+	}
 };
 
 export default userReducer;

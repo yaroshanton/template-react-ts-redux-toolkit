@@ -3,10 +3,13 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@babel/plugin-transform-private-property-in-object": "^7.22.11",
 		"@mui/material": "^5.13.7",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^14.0.0",
 		"@testing-library/user-event": "^14.4.3",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
 		"@types/jest": "^29.5.2",
 		"@types/node": "^20.3.3",
 		"@types/react": "^18.2.14",
@@ -52,7 +55,6 @@
 		]
 	},
 	"devDependencies": {
-		"@babel/plugin-transform-private-property-in-object": "^7.22.11",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-config-prettier": "^8.8.0",
