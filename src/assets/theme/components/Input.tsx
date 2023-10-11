@@ -7,17 +7,16 @@ interface MuiComponentSettings {
 
 export const MuiOutlinedInput = {
 	styleOverrides: {
-		root: {
+		root: ({theme}: {theme: Theme}) => ({
 			'&.Mui-error': {
 				fieldset: {
-					borderColor: '#cd463a !important',
+					borderColor: theme.palette.error200,
 				},
 			},
-		},
+		}),
 		notchedOutline: {
 			outline: 0,
 			borderColor: '#cd463a',
-			// borderWidth: '1px',
 		},
 	},
 };
@@ -25,15 +24,14 @@ export const MuiOutlinedInput = {
 export const MuiInputLabel: MuiComponentSettings = {
 	styleOverrides: {
 		root: ({theme}: {theme: Theme}) => ({
-			fontSize: '20px',
-			lineHeight: '22px',
-			color: theme.palette.darkGray,
+			fontSize: '12px',
+			lineHeight: '166%',
+			color: theme.palette.neutral900,
 			fontWeight: 400,
-			textAlign: 'center',
 			marginBottom: '8px',
 
 			'&.Mui-error': {
-				color: '#AAACAB',
+				color: theme.palette.error500,
 			},
 		}),
 	},
@@ -42,31 +40,51 @@ export const MuiInputLabel: MuiComponentSettings = {
 export const MuiInputBase = {
 	styleOverrides: {
 		root: ({theme}: {theme: Theme}) => ({
-			fontSize: '20px',
-			fontWeight: 700,
-			lineHeight: '160%',
+			fontSize: '16px',
+			fontWeight: 400,
+			lineHeight: '150%',
 			letterSpacing: '0.15px',
-			color: theme.palette.darkGray,
-			height: '144px',
+			height: '44px',
 			width: '100%',
 			'& input': {
-				padding: '4px 12px',
+				padding: '10px 12px',
+				color: theme.palette.neutral900,
+				'&::placeholder': {
+					color: theme.palette.neutral300,
+				},
 			},
 			'& fieldset': {
 				borderRadius: '8px',
-				border: `1px solid  ${theme.palette.darkGray}`,
+				border: `1px solid  ${theme.palette.neutral200}`,
 				legend: {
 					display: 'none',
 				},
 			},
-			'&:hover fieldset': {
-				border: `1px solid ${theme.palette.darkGray}`,
+			'&:hover': {
+				'& input::placeholder': {
+					color: theme.palette.neutral400,
+				},
+				'& fieldset': {
+					border: `1px solid  ${theme.palette.neutral300} !important`,
+				},
 			},
-			'&.Mui-focused fieldset': {
-				border: `1px solid ${theme.palette.darkGray} !important`,
+			'&.Mui-focused': {
+				color: theme.palette.neutral900,
+				'& fieldset': {
+					border: `1px solid ${theme.palette.primary500} !important`,
+				},
+			},
+			'&.Mui-disabled': {
+				color: theme.palette.neutral200,
+				'& fieldset': {
+					border: `1px solid ${theme.palette.neutral100} !important`,
+				},
 			},
 			'&.Mui-error': {
-				'& fieldset, &.Mui-focused fieldset': {borderColor: `${theme.palette.darkGray} !important`},
+				'& input, input::placeholder': {
+					color: theme.palette.error500,
+				},
+				'& fieldset, &.Mui-focused fieldset': {borderColor: `${theme.palette.error200} !important`},
 			},
 		}),
 	},
@@ -81,13 +99,13 @@ export const MuiFormControl = {
 			width: '100%',
 
 			'& .MuiInputLabel-animated': {
-				color: theme.palette.darkGray,
+				color: theme.palette.neutral300,
 				fontWeight: 700,
 				fontSize: '20px',
 				lineHeight: 'normal',
 
 				'&.Mui-focused, &.MuiFormLabel-filled': {
-					color: theme.palette.darkGray,
+					color: theme.palette.neutral300,
 					fontSize: '12px',
 					transform: 'translate(12px, 4px) scale(0.75)',
 					letterSpacing: '0.4px',

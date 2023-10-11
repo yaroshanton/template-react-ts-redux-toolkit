@@ -6,10 +6,24 @@ import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput} from './c
 
 declare module '@mui/material/styles' {
 	export interface Palette {
-		darkGray: string;
+		neutral100: string;
+		neutral200: string;
+		neutral300: string;
+		neutral400: string;
+		neutral900: string;
+		primary500: string;
+		error200: string;
+		error500: string;
 	}
 	interface PaletteOptions {
-		darkGray?: string;
+		neutral100?: string;
+		neutral200?: string;
+		neutral300?: string;
+		neutral400?: string;
+		neutral900?: string;
+		primary500?: string;
+		error200?: string;
+		error500?: string;
 	}
 }
 
@@ -22,7 +36,14 @@ declare module '@mui/material/Button' {
 
 const theme = createTheme({
 	palette: {
-		darkGray: '#000',
+		neutral100: '#f0f1f4',
+		neutral200: '#c3c7d4',
+		neutral300: '#8f98a9',
+		neutral400: '#6b788f',
+		neutral900: '#0c1525',
+		primary500: '#26b5ed',
+		error200: '#feb4b6',
+		error500: '#fb0b24',
 	},
 	breakpoints: {
 		values: {

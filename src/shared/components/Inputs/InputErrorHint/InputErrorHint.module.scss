@@ -1,0 +1,13 @@
+@import '~assets/styles/mixins';
+
+.error {
+	position: absolute;
+	right: 16px;
+	top: 104%;
+	font-size: 12px;
+	color: var(--error-500);
+
+	&_checkbox {
+		top: 42px;
+	}
+}
