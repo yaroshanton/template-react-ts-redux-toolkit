@@ -1,12 +1,12 @@
 //styles
 import 'assets/styles/global.scss';
-//components
-import Input from 'shared/components/Inputs/Input';
 
 const App = () => {
 	return (
 		<div className="app">
-			<Input label="Name" placeholder="Type your name" />
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit cumque esse voluptatibus aliquid nihil, perferendis
+			deserunt quo ducimus voluptatum aspernatur recusandae sunt laborum molestias ipsum adipisci nemo fugiat veniam
+			incidunt.
 		</div>
 	);
 };

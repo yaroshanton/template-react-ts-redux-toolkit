@@ -1,4 +1,4 @@
-// MUI
+//mui
 import {Theme} from '@mui/material';
 
 interface MuiComponentSettings {
