@@ -1,7 +1,8 @@
 // MUI
-import { createTheme } from '@mui/material';
+import {createTheme} from '@mui/material';
 //components
-import { MuiButton } from './components/Button';
+import {MuiButton} from './components/Button';
+import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput} from './components/Input';
 
 declare module '@mui/material/styles' {
 	export interface Palette {
@@ -41,6 +42,10 @@ const theme = createTheme({
 	},
 	components: {
 		MuiButton,
+		MuiFormControl,
+		MuiInputBase,
+		MuiInputLabel,
+		MuiOutlinedInput,
 	},
 });
 

@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+.app {
+	padding: 50px;
+}
+
 ul[class],
 ol[class] {
 	padding: 0;
