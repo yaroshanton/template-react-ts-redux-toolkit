@@ -2,7 +2,7 @@ import React from 'react';
 import {createRoot} from 'react-dom/client';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from '@mui/material';
-import theme from 'assets/theme';
+import theme from './assets/theme';
 import App from './App';
 import store from './store';
 //styles
@@ -13,10 +13,10 @@ const root = createRoot(element as HTMLElement);
 
 root.render(
 	<React.StrictMode>
-		<Provider store={store}>
-			<ThemeProvider theme={theme}>
+		<ThemeProvider theme={theme}>
+			<Provider store={store}>
 				<App />
-			</ThemeProvider>
-		</Provider>
+			</Provider>
+		</ThemeProvider>
 	</React.StrictMode>
 );

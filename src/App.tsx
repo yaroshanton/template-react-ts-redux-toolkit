@@ -1,12 +1,12 @@
 //styles
-import 'assets/styles/global.scss';
+import '@styles/global.scss';
+import {ReactComponent as Plus} from '@images/icons/plus.svg';
+import Button from '@components/Button';
 
 const App = () => {
 	return (
 		<div className="app">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit cumque esse voluptatibus aliquid nihil, perferendis
-			deserunt quo ducimus voluptatum aspernatur recusandae sunt laborum molestias ipsum adipisci nemo fugiat veniam
-			incidunt.
+			<Button startIcon={<Plus />} title="Create new event" />
 		</div>
 	);
 };
