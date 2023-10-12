@@ -1,7 +1,7 @@
 {
 	// "extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"baseUrl": "./src",
+		"baseUrl": ".",
 		"target": "es2015",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -17,7 +17,22 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"useUnknownInCatchVariables": false
+		"useUnknownInCatchVariables": false,
+		"paths": {
+			"@/*": ["./src/*"],
+			"@images/*": ["./src/assets/images/*"],
+			"@styles/*": ["./src/assets/styles/*"],
+			"@api/*": ["./src/core/api/*"],
+			"@components/*": ["./src/shared/components/*"],
+			"@store/*": ["./src/store/*"],
+			"@constants/*": ["./src/utils/constants/*"],
+			"@enums/*": ["./src/utils/enums/*"],
+			"@types/*": ["./src/utils/types/*"],
+			"@helpers/*": ["./src/utils/helpers/*"],
+		}
 	},
-	"include": ["./src"]
+	"include": ["./src"],
+    "exclude": [
+      "node_modules"
+    ]
 }
