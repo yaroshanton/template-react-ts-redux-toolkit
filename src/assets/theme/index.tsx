@@ -4,6 +4,7 @@ import {createTheme} from '@mui/material';
 import {MuiButton} from './components/Button';
 import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput, MuiFormHelperText} from './components/Input';
 import {MuiSelect, MuiPaper} from './components/Select';
+import {MuiSwitch} from './components/Switch';
 
 declare module '@mui/material/styles' {
 	export interface Palette {
@@ -110,6 +111,7 @@ const theme = createTheme({
 		MuiSelect,
 		MuiPaper,
 		MuiFormHelperText,
+		MuiSwitch,
 	},
 });
 

@@ -51,7 +51,7 @@ const Input: FC<InputProps> = ({
 	};
 
 	return (
-		<Box className={cx(className, styles.input)} sx={sx}>
+		<Box className={cx(className, styles.wrapper)}>
 			<MuiInputLabel htmlFor={id} error={!!errorText}>
 				{label}
 			</MuiInputLabel>
