@@ -2,7 +2,8 @@
 import {createTheme} from '@mui/material';
 //components
 import {MuiButton} from './components/Button';
-import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput} from './components/Input';
+import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput, MuiFormHelperText} from './components/Input';
+import {MuiSelect, MuiPaper} from './components/Select';
 
 declare module '@mui/material/styles' {
 	export interface Palette {
@@ -11,6 +12,7 @@ declare module '@mui/material/styles' {
 		neutral300: string;
 		neutral400: string;
 		neutral900: string;
+		primary100: string;
 		primary500: string;
 		error200: string;
 		error500: string;
@@ -21,6 +23,7 @@ declare module '@mui/material/styles' {
 		neutral300?: string;
 		neutral400?: string;
 		neutral900?: string;
+		primary100?: string;
 		primary500?: string;
 		error200?: string;
 		error500?: string;
@@ -41,6 +44,7 @@ const theme = createTheme({
 		neutral300: '#8f98a9',
 		neutral400: '#6b788f',
 		neutral900: '#0c1525',
+		primary100: '#e6f8ff',
 		primary500: '#26b5ed',
 		error200: '#feb4b6',
 		error500: '#fb0b24',
@@ -67,6 +71,9 @@ const theme = createTheme({
 		MuiInputBase,
 		MuiInputLabel,
 		MuiOutlinedInput,
+		MuiSelect,
+		MuiPaper,
+		MuiFormHelperText,
 	},
 });
 

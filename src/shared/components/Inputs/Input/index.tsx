@@ -1,11 +1,15 @@
 import {ChangeEvent, FC, useMemo} from 'react';
 import cx from 'classnames';
 //mui
-import {Box, BaseTextFieldProps, TextField as MuiInput, InputLabel as MuiInputLabel} from '@mui/material';
+import {
+	Box,
+	BaseTextFieldProps,
+	TextField as MuiInput,
+	InputLabel as MuiInputLabel,
+	FormHelperText,
+} from '@mui/material';
 //formik
 import {FieldInputProps, FormikProps} from 'formik';
-//components
-import InputErrorHint from '../InputErrorHint';
 //styles
 import styles from './styles.module.scss';
 
@@ -61,7 +65,7 @@ const Input: FC<InputProps> = ({
 				error={!!errorText}
 			/>
 
-			{!disableErrorMessage && errorText && <InputErrorHint text={errorText} />}
+			{!disableErrorMessage && errorText && <FormHelperText error>{errorText}</FormHelperText>}
 		</Box>
 	);
 };

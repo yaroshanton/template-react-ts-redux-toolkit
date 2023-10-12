@@ -1,10 +1,6 @@
 //mui
 import {Theme} from '@mui/material';
 
-interface MuiComponentSettings {
-	[key: string]: string | number | object;
-}
-
 export const MuiOutlinedInput = {
 	styleOverrides: {
 		root: ({theme}: {theme: Theme}) => ({
@@ -14,14 +10,10 @@ export const MuiOutlinedInput = {
 				},
 			},
 		}),
-		notchedOutline: {
-			outline: 0,
-			borderColor: '#cd463a',
-		},
 	},
 };
 
-export const MuiInputLabel: MuiComponentSettings = {
+export const MuiInputLabel = {
 	styleOverrides: {
 		root: ({theme}: {theme: Theme}) => ({
 			fontSize: '12px',
@@ -46,6 +38,7 @@ export const MuiInputBase = {
 			letterSpacing: '0.15px',
 			height: '44px',
 			width: '100%',
+
 			'& input': {
 				padding: '10px 12px',
 				color: theme.palette.neutral900,
@@ -54,7 +47,7 @@ export const MuiInputBase = {
 				},
 			},
 			'& fieldset': {
-				borderRadius: '8px',
+				borderRadius: 'var(--default--border-radius)',
 				border: `1px solid  ${theme.palette.neutral200}`,
 				legend: {
 					display: 'none',
@@ -112,6 +105,16 @@ export const MuiFormControl = {
 					fontWeight: 400,
 				},
 			},
+		}),
+	},
+};
+
+export const MuiFormHelperText = {
+	styleOverrides: {
+		root: ({theme}: {theme: Theme}) => ({
+			color: `${theme.palette.error500} !important`,
+			textAlign: 'right' as any,
+			paddingRight: '12px',
 		}),
 	},
 };

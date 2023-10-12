@@ -1,0 +1,12 @@
+.select {
+	position: relative;
+	width: 100%;
+
+	:hover .placeholder {
+		color: var(--neutral400);
+	}
+
+	.placeholder {
+		color: var(--neutral-300);
+	}
+}
