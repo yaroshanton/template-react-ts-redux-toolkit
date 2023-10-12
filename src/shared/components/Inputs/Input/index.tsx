@@ -29,7 +29,7 @@ const Input: FC<InputProps> = ({
 	onChange,
 	className,
 	type,
-	sx = {},
+	sx,
 	inputProps,
 	disableErrorMessage,
 	...rest

@@ -41,7 +41,7 @@ const Select: FC<CustomSelectProps> = ({
 	placeholder,
 	disabled,
 	onChange,
-	sx = {},
+	sx,
 	...rest
 }) => {
 	const errorText = useMemo(() => {
@@ -84,7 +84,7 @@ const Select: FC<CustomSelectProps> = ({
 					}}
 				>
 					{options?.map((item: any) => (
-						<MenuItem key={item} value={item} className={styles.item}>
+						<MenuItem key={item} value={item}>
 							{item}
 							{value.includes(item) && <Accept />}
 						</MenuItem>
