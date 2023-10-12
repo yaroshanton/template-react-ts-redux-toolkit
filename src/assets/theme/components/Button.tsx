@@ -14,7 +14,6 @@ export const MuiButton: MuiComponentSettings = {
 			lineHeight: '28px',
 			minWidth: '173px',
 			textTransform: 'Capitalize',
-			alignItems: 'flex-start',
 		},
 	},
 	variants: [

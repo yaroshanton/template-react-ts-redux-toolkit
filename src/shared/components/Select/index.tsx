@@ -13,9 +13,10 @@ import {
 } from '@mui/material';
 //formik
 import {FieldInputProps, FormikProps} from 'formik';
-//styles
+//icons
 import {ReactComponent as Accept} from 'assets/icons/accept.svg';
 import {ReactComponent as ArrowDown} from 'assets/icons/arrow-down.svg';
+//styles
 import styles from './styles.module.scss';
 
 interface CustomSelectProps extends Omit<SelectProps<any>, 'disableErrorMessage' | 'customError'> {
@@ -58,7 +59,7 @@ const Select: FC<CustomSelectProps> = ({
 	};
 
 	return (
-		<Box className={cx(className, styles.select)} sx={sx}>
+		<Box className={cx(className, styles.wrapper)}>
 			{label && (
 				<MuiInputLabel htmlFor={id} error={!!errorText} disabled={disabled}>
 					{label}
