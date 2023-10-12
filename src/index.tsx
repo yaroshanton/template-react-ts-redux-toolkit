@@ -1,4 +1,3 @@
-import React from 'react';
 import {createRoot} from 'react-dom/client';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from '@mui/material';
@@ -12,11 +11,11 @@ const element = document.getElementById('root');
 const root = createRoot(element as HTMLElement);
 
 root.render(
-	<React.StrictMode>
+	// <React.StrictMode>
+	<Provider store={store}>
 		<ThemeProvider theme={theme}>
-			<Provider store={store}>
-				<App />
-			</Provider>
+			<App />
 		</ThemeProvider>
-	</React.StrictMode>
+	</Provider>
+	// </React.StrictMode>
 );

@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
+import {configureStore} from '@reduxjs/toolkit';
 // import testStore from './test-service/reducer';
 
 const store = configureStore({
