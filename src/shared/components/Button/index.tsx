@@ -1,41 +1,9 @@
 import {FC} from 'react';
+//mui
+import {ButtonProps, Button as MuiButton} from '@mui/material';
 
-import {ButtonProps, SxProps, Button as MuiButton} from '@mui/material';
-import cx from 'classnames';
-
-export type OwnProps = {
-	styles?: SxProps;
-};
-
-export type ExtendedButtonProps = OwnProps & ButtonProps;
-
-const Button: FC<ExtendedButtonProps> = ({
-	title,
-	color = 'primary',
-	type,
-	startIcon,
-	endIcon,
-	disabled = false,
-	styles,
-	className,
-	onClick,
-	size,
-	variant = 'filled',
-}) => (
-	<MuiButton
-		variant={variant}
-		onClick={onClick}
-		color={color}
-		type={type}
-		disabled={disabled}
-		startIcon={startIcon}
-		endIcon={endIcon}
-		size={size}
-		className={cx(className)}
-		sx={{
-			...styles,
-		}}
-	>
+const Button: FC<ButtonProps> = ({color = 'primary', variant = 'filled', disabled = false, title, ...rest}) => (
+	<MuiButton {...rest} variant={variant} color={color} disabled={disabled}>
 		{title}
 	</MuiButton>
 );

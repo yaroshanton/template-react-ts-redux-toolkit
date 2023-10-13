@@ -1,6 +1,8 @@
 // MUI
 import {createTheme} from '@mui/material';
 //components
+import {MuiRadio} from '@/assets/theme/components/Radio';
+import {MuiCheckbox} from '@/assets/theme/components/Checkbox';
 import {MuiButton} from './components/Button';
 import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput, MuiFormHelperText} from './components/Input';
 import {MuiSelect, MuiPaper} from './components/Select';
@@ -105,6 +107,8 @@ const theme = createTheme({
 	components: {
 		MuiButton,
 		MuiFormControl,
+		MuiRadio,
+		MuiCheckbox,
 		MuiInputBase,
 		MuiInputLabel,
 		MuiOutlinedInput,
