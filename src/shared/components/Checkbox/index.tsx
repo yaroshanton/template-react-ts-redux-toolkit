@@ -1,4 +1,7 @@
 import {ChangeEvent, FC} from 'react';
+import cx from 'classnames';
+//formik
+import {FieldInputProps, FormikProps} from 'formik';
 //mui
 import {RadioProps, Checkbox as MuiCheckbox, FormControlLabel, Typography} from '@mui/material';
 //icons
@@ -6,8 +9,6 @@ import {ReactComponent as CheckedPrimary} from '@images/icons/checkbox-checked.s
 import {ReactComponent as CheckedError} from '@images/icons/close-square.svg';
 import {ReactComponent as Unchecked} from '@images/icons/checkbox-unchecked.svg';
 //styles
-import cx from 'classnames';
-import {FieldInputProps, FormikProps} from 'formik';
 import styles from '../Radio/styles.module.scss';
 
 export interface ExtendedCheckboxProps extends Omit<RadioProps, 'form'> {
@@ -17,7 +18,7 @@ export interface ExtendedCheckboxProps extends Omit<RadioProps, 'form'> {
 }
 
 const Checkbox: FC<ExtendedCheckboxProps> = ({
-	color = 'primary',
+	color,
 	disabled = false,
 	form,
 	field,
@@ -49,7 +50,7 @@ const Checkbox: FC<ExtendedCheckboxProps> = ({
 					icon={<Unchecked />}
 					onChange={changeHandler}
 					value={value}
-					color={color}
+					color={color || 'primary'}
 					disabled={disabled}
 				/>
 			}
