@@ -7,13 +7,14 @@ import {
 	TextField as MuiInput,
 	InputLabel as MuiInputLabel,
 	FormHelperText,
+	TextFieldProps,
 } from '@mui/material';
 //formik
 import {FieldInputProps, FormikProps} from 'formik';
 //styles
 import styles from './styles.module.scss';
 
-interface ExtendedInputProps extends BaseTextFieldProps {
+interface ExtendedInputProps extends BaseTextFieldProps, Pick<TextFieldProps, 'value' | 'onBlur'> {
 	field: FieldInputProps<string | number>;
 	form: FormikProps<any>;
 	label: string;
@@ -29,7 +30,6 @@ const Input: FC<ExtendedInputProps> = ({
 	onChange,
 	className,
 	type,
-	sx,
 	inputProps,
 	disableErrorMessage,
 	...rest
@@ -41,7 +41,7 @@ const Input: FC<ExtendedInputProps> = ({
 		[errors, field, touched]
 	);
 
-	const changeHandler = (event: ChangeEvent<HTMLInputElement>) => {
+	const changeHandler = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 		if (onChange) {
 			const {value} = event.target;
 			onChange(value);

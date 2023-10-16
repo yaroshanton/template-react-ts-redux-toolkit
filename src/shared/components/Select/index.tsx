@@ -42,7 +42,6 @@ const Select: FC<CustomSelectProps> = ({
 	placeholder,
 	disabled,
 	onChange,
-	sx,
 	...rest
 }) => {
 	const errorText = useMemo(() => {
