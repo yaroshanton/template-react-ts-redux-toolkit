@@ -7,7 +7,7 @@ import {FieldInputProps, FormikProps} from 'formik';
 //styles
 import styles from './styles.module.scss';
 
-interface CustomSelectProps extends Omit<SwitchProps, 'field' | 'form'> {
+interface CustomSelectProps extends Omit<SwitchProps, 'form'> {
 	field?: FieldInputProps<string | number>;
 	form?: FormikProps<any>;
 	onChange?: (event: ChangeEvent<HTMLInputElement>) => void;

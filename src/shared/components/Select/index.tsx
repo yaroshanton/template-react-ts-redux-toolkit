@@ -19,7 +19,7 @@ import {ReactComponent as ArrowDown} from 'assets/icons/arrow-down.svg';
 //styles
 import styles from './styles.module.scss';
 
-interface CustomSelectProps extends Omit<SelectProps<any>, 'disableErrorMessage' | 'customError'> {
+interface CustomSelectProps extends SelectProps<any> {
 	field?: FieldInputProps<string | number>;
 	form?: FormikProps<any>;
 	options?: any;
@@ -84,7 +84,7 @@ const Select: FC<CustomSelectProps> = ({
 						return selected;
 					}}
 				>
-					{options?.map((item: any) => (
+					{options?.map((item: string) => (
 						<MenuItem key={item} value={item}>
 							{item}
 							{value.includes(item) && <Accept />}

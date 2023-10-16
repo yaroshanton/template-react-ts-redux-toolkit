@@ -16,7 +16,7 @@ export interface ExtendedRadioProps extends Omit<RadioProps, 'form'> {
 }
 
 const Radio: FC<ExtendedRadioProps> = ({
-	color = 'primary',
+	color,
 	disabled = false,
 	form,
 	field,
@@ -48,7 +48,7 @@ const Radio: FC<ExtendedRadioProps> = ({
 					icon={<Unchecked />}
 					onChange={changeHandler}
 					value={value}
-					color={color}
+					color={color || 'primary'}
 					disabled={disabled}
 				/>
 			}

@@ -13,7 +13,7 @@ import {FieldInputProps, FormikProps} from 'formik';
 //styles
 import styles from './styles.module.scss';
 
-interface InputProps extends Omit<BaseTextFieldProps, 'disableErrorMessage'> {
+interface InputProps extends BaseTextFieldProps {
 	field: FieldInputProps<string | number>;
 	form: FormikProps<any>;
 	label: string;
