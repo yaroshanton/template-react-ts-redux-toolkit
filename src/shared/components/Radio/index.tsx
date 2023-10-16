@@ -5,8 +5,8 @@ import {FieldInputProps, FormikProps} from 'formik';
 //mui
 import {RadioProps, Radio as MuiRadio, FormControlLabel, Typography} from '@mui/material';
 //icons
-import {ReactComponent as Checked} from '@images/icons/rudiobutton-checked.svg';
-import {ReactComponent as Unchecked} from '@images/icons/rudiobutton-unchecked.svg';
+import {ReactComponent as Checked} from '@icons/rudiobutton-checked.svg';
+import {ReactComponent as Unchecked} from '@icons/rudiobutton-unchecked.svg';
 //styles
 import styles from './styles.module.scss';
 

@@ -21,6 +21,7 @@
 		"paths": {
 			"@/*": ["./src/*"],
 			"@images/*": ["./src/assets/images/*"],
+			"@icons/*": ["./src/assets/icons/*"],
 			"@styles/*": ["./src/assets/styles/*"],
 			"@api/*": ["./src/core/api/*"],
 			"@components/*": ["./src/shared/components/*"],

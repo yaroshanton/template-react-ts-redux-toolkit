@@ -1,0 +1,57 @@
+.dialog {
+	&__wrap {
+		.MuiDialog-scrollPaper {
+			background: #000 !important;
+		}
+	}
+
+	&__icon {
+		margin-top: 48px;
+		text-align: center;
+
+		&_close {
+			position: absolute !important;
+			right: 8px;
+			top: 8px;
+		}
+
+		svg {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	&__content {
+		padding: 32px 0;
+
+		&__title {
+			text-align: center;
+			font-size: 24px !important;
+			padding: 0 !important;
+		}
+		&__text {
+			padding-top: 8px;
+			text-align: center;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	&__actions {
+		width: 50%;
+		min-width: 370px;
+		margin: 0 auto 48px;
+		display: flex;
+		justify-content: space-evenly;
+		gap: 24px;
+
+		&__button_main {
+			width: 100%;
+		}
+	}
+}
+
+.scroll__paper {
+	align-items: flex-start !important;
+	margin-top: 15vh;
+}
