@@ -22,7 +22,7 @@ import styles from './styles.module.scss';
 interface CustomSelectProps extends SelectProps<any> {
 	field?: FieldInputProps<string | number>;
 	form?: FormikProps<any>;
-	options?: any;
+	options?: string[];
 	disableErrorMessage?: boolean;
 	customError?: string;
 	onChange?: (event: SelectChangeEvent<string>) => void;

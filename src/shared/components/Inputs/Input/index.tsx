@@ -13,7 +13,7 @@ import {FieldInputProps, FormikProps} from 'formik';
 //styles
 import styles from './styles.module.scss';
 
-interface InputProps extends BaseTextFieldProps {
+interface ExtendedInputProps extends BaseTextFieldProps {
 	field: FieldInputProps<string | number>;
 	form: FormikProps<any>;
 	label: string;
@@ -21,7 +21,7 @@ interface InputProps extends BaseTextFieldProps {
 	onChange?: (event: string) => void;
 }
 
-const Input: FC<InputProps> = ({
+const Input: FC<ExtendedInputProps> = ({
 	label,
 	form,
 	id,
