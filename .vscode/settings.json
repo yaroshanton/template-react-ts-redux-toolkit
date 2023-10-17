@@ -5,6 +5,7 @@
         "linebreak",
         "nospace",
         "onespace",
+        "Simpli",
         "swiper"
     ],
     "editor.formatOnSave": false,

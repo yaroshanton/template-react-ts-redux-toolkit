@@ -1,12 +1,18 @@
-// MUI
+//mui
 import {createTheme} from '@mui/material';
 //components
 import {MuiRadio} from '@/assets/theme/components/Radio';
 import {MuiCheckbox} from '@/assets/theme/components/Checkbox';
-import {MuiButton} from './components/Button';
-import {MuiFormControl, MuiInputBase, MuiInputLabel, MuiOutlinedInput, MuiFormHelperText} from './components/Input';
-import {MuiSelect, MuiPaper} from './components/Select';
-import {MuiSwitch} from './components/Switch';
+import {MuiButton} from '@/assets/theme/components/Button';
+import {
+	MuiFormControl,
+	MuiInputBase,
+	MuiInputLabel,
+	MuiOutlinedInput,
+	MuiFormHelperText,
+} from '@/assets/theme/components/Input';
+import {MuiSelect, MuiPaper} from '@/assets/theme/components/Select';
+import {MuiSwitch} from '@/assets/theme/components/Switch';
 
 declare module '@mui/material/styles' {
 	export interface Palette {

@@ -12,12 +12,12 @@ import {
 } from '@mui/material';
 //components
 import Button from '@components/Button';
-// icons
+//icons
 import {ReactComponent as CheckedError} from '@icons/close_big.svg';
 //types
-import {Color} from '@/utils/types';
-//utils
-import {BUTTON_LABELS, COLORS} from '@/utils/constants';
+import {DefaultButtonColor} from '@/utils/types';
+//constants
+import {CLOSE, OUTLINE, SAVE} from '@/utils/constants';
 //styles
 import styles from './styles.module.scss';
 
@@ -30,16 +30,16 @@ export interface ExtendedDialogProps extends DialogProps {
 	isShowCloseButton?: boolean;
 	closeButtonTitle?: string;
 	saveButtonTitle?: string;
-	color?: Color;
+	color?: DefaultButtonColor;
 	children?: ReactNode;
 }
 
 const Dialog: FC<ExtendedDialogProps> = ({
-	color = COLORS.PRIMARY,
+	color,
 	isShowCloseIcon = true,
 	isShowCloseButton = false,
-	closeButtonTitle = BUTTON_LABELS.CLOSE,
-	saveButtonTitle = BUTTON_LABELS.SAVE,
+	closeButtonTitle = CLOSE,
+	saveButtonTitle = SAVE,
 	children,
 	title,
 	text,
@@ -60,10 +60,11 @@ const Dialog: FC<ExtendedDialogProps> = ({
 			>
 				<Box className={styles.dialog}>
 					{isShowCloseIcon && (
-						<IconButton aria-label="close" onClick={onClose} className={styles.dialog__icon_close}>
+						<IconButton aria-label={CLOSE} onClick={onClose} className={styles.dialog__icon_close}>
 							<CheckedError />
 						</IconButton>
 					)}
+
 					{mainIcon && <Box className={styles.dialog__icon}>{mainIcon}</Box>}
 
 					<DialogContent className={styles.dialog__content}>
@@ -71,15 +72,19 @@ const Dialog: FC<ExtendedDialogProps> = ({
 						<DialogContentText className={styles.dialog__content__text}>{text}</DialogContentText>
 						{children}
 					</DialogContent>
+
 					<Box className={styles.dialog__actions}>
 						{isShowCloseButton && (
-							<Button color={color} variant="outline" autoFocus onClick={onClose}>
-								{closeButtonTitle}
-							</Button>
+							<Button title={closeButtonTitle} color={color} variant={OUTLINE} autoFocus onClick={onClose} />
 						)}
-						<Button className={styles.dialog__actions__button_main} color={color} autoFocus onClick={onClose}>
-							{saveButtonTitle}
-						</Button>
+
+						<Button
+							title={saveButtonTitle}
+							className={styles.dialog__actions__button_main}
+							color={color}
+							autoFocus
+							onClick={onClose}
+						/>
 					</Box>
 				</Box>
 			</MuiDialog>
