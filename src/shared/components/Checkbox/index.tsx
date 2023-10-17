@@ -5,9 +5,9 @@ import {FieldInputProps, FormikProps} from 'formik';
 //mui
 import {RadioProps, Checkbox as MuiCheckbox, FormControlLabel, Typography} from '@mui/material';
 //icons
-import {ReactComponent as CheckedPrimary} from '@images/icons/checkbox-checked.svg';
-import {ReactComponent as CheckedError} from '@images/icons/close-square.svg';
-import {ReactComponent as Unchecked} from '@images/icons/checkbox-unchecked.svg';
+import {ReactComponent as CheckedPrimary} from '@icons/checkbox-checked.svg';
+import {ReactComponent as CheckedError} from '@icons/close-square.svg';
+import {ReactComponent as Unchecked} from '@icons/checkbox-unchecked.svg';
 //styles
 import styles from '../Radio/styles.module.scss';
 

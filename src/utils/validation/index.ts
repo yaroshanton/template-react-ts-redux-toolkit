@@ -1,2 +1,2 @@
-// export * from './test.schema';
+export * from './schema';
 // export * from './test.validation';

@@ -14,8 +14,8 @@ import {
 //formik
 import {FieldInputProps, FormikProps} from 'formik';
 //icons
-import {ReactComponent as Accept} from 'assets/icons/accept.svg';
-import {ReactComponent as ArrowDown} from 'assets/icons/arrow-down.svg';
+import {ReactComponent as Accept} from '@icons/accept.svg';
+import {ReactComponent as ArrowDown} from '@icons/arrow-down.svg';
 //styles
 import styles from './styles.module.scss';
 
